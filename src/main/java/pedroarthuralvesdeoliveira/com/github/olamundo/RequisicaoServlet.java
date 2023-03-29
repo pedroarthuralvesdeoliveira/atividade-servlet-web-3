@@ -19,14 +19,13 @@ public class RequisicaoServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
         out.println("<html>");
         out.println("<head>");
-        out.println("<title>Informacao da Requisicao</title>");
+        out.println("<title>Informações da requisição</title>");
         out.println("</head>");
         out.println("<body>");
-        out.println("<h1>Informacao da Requisicao</h1>");
-        out.println("<p>Metodo: " + method + "</p>");
+        out.println("<p>Método: " + method + "</p>");
         out.println("<p>URI: " + uri + "</p>");
         out.println("<p>Protocolo: " + protocol + "</p>");
-        out.println("<p>Endereco Remoto: " + remoteAddress + "</p>");
+        out.println("<p>Endereço remoto: " + remoteAddress + "</p>");
         out.println("</body>");
         out.println("</html>");
     }
